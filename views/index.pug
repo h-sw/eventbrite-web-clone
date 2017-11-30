@@ -1,0 +1,104 @@
+extends layout
+block content
+      .container-fluid.boody
+        div
+          .row.title
+            div
+              #carouselExampleSlidesOnly.carousel.slide(data-ride='carousel')
+                .carousel-inner
+                  .carousel-item.active
+                    img.d-block.w-100.img-fluid(src='/images/homepage_hero_banner_1.jpg', alt='title image')
+                  .carousel-item
+                    img.d-block.w-100.img-fluid(src='/images/homepage_hero_banner_2.jpg', alt='title image')
+                  .carousel-item
+                    img.d-block.w-100.img-fluid(src='/images/homepage_hero_banner_3.jpg', alt='title image')
+        .container-fluid.search
+          .row.m-search
+            .col.align-self-center.search-card
+              .card.search-title
+                .card-body
+                  h1.card-title Find Your next experience
+                  .container-fluid.main-box
+                    .form-group.row.main-body
+                      .col-lg.search-group
+                        .input-group
+                          input.form-control.search-text(type='text', placeholder='Search events or categories', aria-label='Search events or categories')
+                          input.form-control.search-text(type='text', placeholder='City or location', aria-label='city or location')
+                          .input-group-btn
+                            .dropdown
+                              .dropdown
+                                button#dropdownMenuButton.btn.btn-secondary.dropdown-toggle.all-dates(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                                  | All Dates
+                                .dropdown-menu(aria-labelledby='dropdownMenuButton')
+                                  a.dropdown-item(href='#') Today
+                                  a.dropdown-item(href='#') Tommorow
+                                  a.dropdown-item(href='#') This Week
+                                  a.dropdown-item(href='#') This Weekend
+                                  a.dropdown-item(href='#') Next Week
+                                  a.dropdown-item(href='#') This Month
+                          button.btn.btn-secondary.search-enter(type='button') SEARCH
+            .mobile-search
+              .input-group
+                input.form-control.search-text-box(type='text', placeholder='Search events or categories', aria-label='Search for...')
+                span.input-group-btn
+                  button.btn.btn-secondary.search-box(type='button') search
+        .container.banner-region
+          .row.title-region
+            .col
+              h2.center
+                | Popular Events in 
+                a(href='#') Incheon, Republic of Korea
+      div
+        .container.see-container
+          .row.see
+            .col.see-btn.text-center
+              button.btn.btn-outline-primary.see-more(type='button') SEE MORE
+      .container.browse-container
+        .container
+          .row
+            .col
+              h5.browse Browse by Top Categories
+          .row.browse-menu
+            .long-card-col
+              a(href='#')
+                .card.img-browse-card.text-white.browse-card.long-card
+                  img.card-img(src='/images/img_category_music.jpg', alt='music')
+                  .card-img-overlay
+                    h5.card-title.browse-title.text-center Music
+                    h6.card-small Intimate house concerts, major music festivals, and the occasional dance party
+            .card-col
+              a(href='#')
+                .card.img-browse-card.text-white.browse-card
+                  img.card-img(src='/images/img_category_food.jpg', alt='food')
+                  .card-img-overlay
+                    h5.card-title.browse-title.text-center Food & Drink
+            .card-col
+              a(href='#')
+                .card.img-browse-card.text-white.browse-card
+                  img.card-img(src='/images/img_category_classes.jpg', alt='classes')
+                  .card-img-overlay
+                    h5.card-title.browse-title.text-center Classes
+            .card-col
+              a(href='#')
+                .card.img-browse-card.text-white.browse-card
+                  img.card-img(src='/images/img_category_arts.jpg', alt='arts')
+                  .card-img-overlay
+                    h5.card-title.browse-title.text-center Arts
+            .card-col
+              a(href='#')
+                .card.img-browse-card.text-white.browse-card
+                  img.card-img(src='/images/img_category_parties.jpg', alt='parties')
+                  .card-img-overlay
+                    h5.card-title.browse-title.text-center Parties
+            .card-col
+              a(href='#')
+                .card.img-browse-card.text-white.sports.browse-card
+                  img.card-img(src='/images/img_category_sports.jpg', alt='sports')
+                  .card-img-overlay
+                    h5.card-title.browse-title.text-center Sports & Wells
+            .long-card-col
+              a(href='#')
+                .card.img-browse-card.text-white.browse-card.long-card
+                  img.card-img(src='/images/img_category_networking.jpg', alt='networking')
+                  .card-img-overlay
+                    h5.card-title.browse-title.text-center Networking

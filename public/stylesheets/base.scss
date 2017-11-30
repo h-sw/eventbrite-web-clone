@@ -1,0 +1,476 @@
+body{
+  width: 100%;
+  background-color: #FAFAFA;
+}
+
+.title-main{
+  padding-left: 20px;
+  padding-right: 15px;
+}
+
+.navbar-light .navbar-brand, .navbar-light .navbar-toggler {
+    font-weight: 600;
+    color: #f6682F;
+}
+
+.navbar-light:hover .navbar-brand:hover, .navbar-light .navbar-toggler:hover{
+  font-weight: 600;
+  color: #f6682F;
+  text-decoration: none;
+}
+
+.container-fluid{
+  width: 100%;
+  padding: 0;
+}
+
+#titie{
+  color:#f6682F;
+}
+
+.mobile-menu{
+  display: none;
+}
+
+.brand-title{
+  font-weight: 700;
+  color:#f6682F;
+}
+.brand-title:hover{
+  color:#f6682F;
+  text-decoration: none;
+}
+
+.img-fluid{
+  width:100%;
+  height: 100%;
+}
+
+.create-event{
+  color: #0278b8;
+}
+
+.navbar-nav>li{
+  border-left: 1px solid #EFF2F5;
+}
+
+.main{
+  font-size: 24px;
+  text-align: center;
+}
+
+.event-card{
+  display: flex;
+  border-radius: 2px;
+  width:30%;
+  max-height: 250px;
+  margin-bottom: 10px;
+  max-width: 48%;
+  margin-left: 0;
+}
+
+.show{
+  margin-top: 2em;
+}
+
+.register-button{
+  float:right;
+}
+
+.line{
+
+}
+
+
+.organ{
+  margin-top: 3em;
+  margin-bottom: 3em;
+  text-align: center;
+}
+
+.foot{
+  background-color: #282C35;
+  font-size: 1em;
+  color: #D2D6DF!important;
+}
+.foot-text{
+  margin-bottom: 3px;
+}
+
+.footer-text-heading-primary{
+  color: #ADB0B6;
+}
+
+.all-dates{
+  border-color: #BDBDBD;
+  background-color: white;
+  color:black;
+  border-radius: 1px;
+}
+
+.all-dates:hover{
+  border-color: #BDBDBD;
+  background-color: white;
+  color:black;
+  text-decoration: none;
+}
+
+.col-md-1{
+  vertical-align: middle;
+  align-items: center;
+}
+
+.menu1,.menu2,.menu3{
+  font-size: 0.4em;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.make{
+  margin-bottom: 2em;
+}
+
+.title-region{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.card-title{
+  font-weight:300;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: #f6682F;
+}
+
+.title-search{
+  align-items: center;
+  width: 80%;
+}
+
+.search-title{
+  opacity: 0.97;
+  margin-top: -140px;
+  align-self: center;
+  text-align: center;
+  width:92%;
+  height: 230px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.share-box{
+  border-top: 1px;
+}
+
+.card-body{
+  padding-left: 10px;
+}
+
+.search-group{
+  margin-top: 12px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.search-enter{
+  border-radius: 3px;
+  margin-left: -1px;
+  line-height: 0;
+  border-color: white;
+  background-color: #f6682F;
+  color: White;
+}
+
+.search-enter:hover{
+  border-radius: 3px;
+  margin-left: -1px;
+  border-color: white;
+  background-color: #f6682F;
+}
+
+.center{
+  text-align: center;
+}
+
+.search-text{
+  width:20%;
+}
+
+.search{
+  align-items: center;
+  padding-left: 0;
+}
+
+.main-box{
+  margin-top: 20px;
+  width: 100%;
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.mobile-search{
+  display: none;
+}
+
+.select-button{
+  background-color: #f6682F;
+}
+
+.card-deck-container{
+  width: 96%;
+}
+
+h6{
+  margin-bottom: 0;
+}
+
+.c-title{
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 600;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+.c-dst{
+  font-size: 12px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-bottom: 0;
+}
+
+.see-container{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.browse-text{
+  padding-left: 30%;
+  padding-right: 30%;
+}
+
+.browse{
+  margin-top: 10px;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 25px;
+  font-weight: 400;
+}
+
+.card-body{
+  border-top: 1px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.search-event{
+  margin-top: 1em;
+  text-align: center;
+}
+.total-event-container{
+  text-align: center; 
+}
+img{
+  white-space: nowrap;
+  overflow: hidden;
+}
+.browse-title{
+  vertical-align: middle;
+  color:white;
+}
+
+.img-browse-card{
+  border: 0;
+  padding: 5px;
+  background-color:#FAFAFA;
+}
+
+
+h5{
+  padding-top: 5px;
+}
+
+.card-small{
+  visibility: hidden;
+}
+.card-small:hover{
+  visibility: visible;
+}
+
+.browse-container{
+  text-align: center;
+}
+
+.browse-menu{
+  margin-left: 0;
+  margin-right: 0;
+  width:100%;
+}
+
+.browse-card{
+  width:100%;
+}
+
+.long-card{
+  width:100%;
+  height: 100%;
+}
+
+.long-card-col{
+  width:66%;
+}
+.card-col{
+  width:33%;
+}
+
+.card-deck{
+  align-items: center;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.bg-faded{
+  background-color: white;
+}
+
+
+
+@media only screen and (max-device-width:800px){
+  .sports{
+    display: none;
+  }
+
+  .content-button{
+    display:none;
+  }
+  .long-card-col{
+    width:100%;
+  }
+  .card-col{
+    width:50%;
+  }
+}
+
+@media only screen and (max-device-width : 480px){
+  .mobile-search{
+    width:80%;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    align-self: center;
+  }
+
+  .menu-set{
+    display: none;
+  }
+
+  .mobile-menu{
+    display: block;
+    align-content: flex-end;
+  }
+
+  .event-card{
+    max-width: 29%;
+  }
+  .title{
+    display: none;
+  }
+
+  .search-card{
+    display: none;
+  }
+
+  .card-title{
+    display: none;
+  }
+
+  .center{
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 400;
+  }
+
+  .search-title{
+    opacity: 0.97;
+    margin-top: 0;
+    align-self: center;
+    text-align: center;
+    width:92%;
+    height: 30px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .main-box{
+    display: block;
+  }
+
+  .mobile-button{
+
+  }
+
+  .search-box{
+    background-color:  #f6682F;
+  }
+
+  .browse-card{
+    width:100px;
+    overflow: hidden;
+  }
+
+  .image{
+    width:50%;
+  }
+
+  .card{
+    width: 100%;
+  }
+
+  img{
+    width: 100%;
+  }
+
+  .sports{
+    display: none;
+  }
+
+  .browse-card{
+    width:100%;
+    height: 150px;
+  }
+
+  .browse-title{
+    display: block;
+  }
+
+  .long-card-col{
+    margin-bottom: 0px;
+    width:100%;
+  }
+  .card-col{
+    width:100%;
+  }
+
+  .m-search{
+    width:100%;
+  }
+
+
+  .header{
+    color:#f6682F;
+  }
+  .navbar-light{
+    color:#f6682F;
+  }
+}
+
+.main-title{
+  color:#f6682F;
+}
+
+
+

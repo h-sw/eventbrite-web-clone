@@ -1,0 +1,7 @@
+.content= event.content
+.card.event-card
+  img.card-img-top(src="/images/card1.png" alt="Event Title Card")
+  .card-body
+    h6.small #[start_date= event.start.date]
+    a.title.c-title(href=`/event/${event.id}`)= event.title
+    p.c-dst= event.location

@@ -1,0 +1,98 @@
+.container-fluid
+  hr
+  h5 Event Details.
+  .container
+    .row
+      .col-8
+        .form-group
+          label(for="title") TITLE
+          input.form-control(type="text", name="title", placeholder="Give it a short distinct name", value=event.title)
+  .container
+    .row
+      .col-8  
+        .form-group
+          label(for="location") LOCATION
+          input.form-control(type="text", name="location", placeholder="Search for a vanue or address", value=event.location)
+    hr
+    .row
+      .col
+        .form-group
+          label(for="start") STARTS
+          .row
+            .col-4
+              input.form-control(type="date", name="start_date", value=event.start_date) 
+            .col-4
+              input.form-control(type="time", name="start_time", value=event.start_time)
+    .row
+      .col
+        .form-group
+          label(for="end") ENDS
+          .row
+            .col-4
+              input.form-control(type="date", name="end_date", value=event.end_date)
+            .col-4
+              input.form-control(type="time", name="end_time", value=event.end_time)
+    hr
+    .form-group
+      label(for="contents") DESCRIPTION
+      textarea.contents.form-control(type="text", name="contents", rows="10", value=event.contents)
+    hr 
+    .form-group
+      label(for="organization") ORGANIZATION
+      input.form-control(type="text", name="organization",value=event.organization)
+    .form-group
+      label(for="organInfo") ORGANIZATION INFO
+      textarea.organInfo.form-control(type="text", name="organInfo", rows="5", value=event.organInfo)
+    hr
+    select.custom-select(name='Event') 
+      option.selected Select the type of event
+      option(value='volvo') Appearance or Singing
+      option(value='saab') Attraction
+      option(value='fiat') Camp, Trip, or Reatreat
+      option(value='audi') Concert or Performance
+      option(value='audi') Conference
+      option(value='audi') Convention
+      option(value='audi') Dinner or Gala
+      option(value='audi') Festival or Fair
+      option(value='audi') Game or Competition
+      option(value='audi') Meeting or Networking Event
+      option(value='audi') Other
+      option(value='audi') Party or Social Gathering
+      option(value='audi') Race or Endurance Event
+      option(value='audi') Rally
+      option(value='audi') Screening
+      option(value='audi') Seminar or Talk
+      option(value='audi') Tour
+      option(value='audi') Tournament
+    br
+    br
+    select.custom-select(name='Event') Select the type of event
+      option.selected Select a topic
+      option(value='volvo') Auto,Boat & Air
+      option(value='volvo') Business & Professional
+      option(value='volvo') Charity & Causes
+      option(value='volvo') Community & Culture
+      option(value='volvo') Family & Education
+      option(value='volvo') Fashion & Beauty
+      option(value='volvo') Film, Media & Entertainment
+      option(value='volvo') Food & Drink
+      option(value='volvo') Government & Politics
+      option(value='volvo') Health & Wellness
+      option(value='volvo') Hobbies & Special Interest
+      option(value='volvo') Home & Lifestyle
+      option(value='volvo') Music
+      option(value='volvo') other
+      option(value='volvo') Performing & Visual Arts
+      option(value='volvo') Religion & Spirituality
+      option(value='volvo') School Activities
+      option(value='volvo') Science & Technology
+      option(value='volvo') Seaconal & Holidays
+      option(value='volvo') Sports & Fitness
+      option(value='volvo') Travel & Outdoor
+    hr
+script.
+  $(function() { $('.contents').froalaEditor() });
+  $(function() { $('.organInfo').froalaEditor() });
+
+
+

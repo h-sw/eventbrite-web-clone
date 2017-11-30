@@ -1,0 +1,23 @@
+extends ../layout
+
+include ../includes/_paginate
+
+block content
+  .container
+    form.form-inline.search-input-group(action='/event', method='GET')
+      i.fa.fa-search
+      input.form-control.mr-sm-2(type='text', name='term', placeholder='Search', aria-label='Search', value=term)
+    if events.total > 0
+      .small Total #{events.total} event(s)
+  .container.card-deck
+    if events.total <= 0 
+      .alert.alert-info No event available yet
+    else
+      each event in events.docs
+        include _event
+      +paginate(events, '/event', query)
+
+    hr
+    a.btn.btn-primary(href='/event/new') Create Event
+
+    hr

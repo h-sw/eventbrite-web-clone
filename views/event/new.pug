@@ -1,0 +1,12 @@
+extends ../layout
+
+block content
+  .container
+    h1.main-title Create An Event
+    form(action=`/event/${currentUser._id}`,  method="POST")
+      include _form
+      button.btn.btn-outline-primary(type="submit") MAKE YOUR EVENT LIVE
+    .container
+      hr
+
+    
