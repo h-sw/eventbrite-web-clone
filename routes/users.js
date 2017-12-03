@@ -2,6 +2,8 @@ const express = require('express');
 const User = require('../models/user');
 const router = express.Router();
 const catchErrors = require('../lib/async-error');
+var nodemailer = require('nodemailer');
+router.post('/',)
 
 function needAuth(req, res, next) {
   if (req.isAuthenticated()) {

@@ -8,6 +8,7 @@ var schema = new Schema({
   password: {type: String},
   root: {type:Boolean, default:false},
   facebook: {id: String, token: String, photo: String},
+  kakao: {id: String, token: String, photo: String},
   createdAt: {type: Date, default: Date.now}
 }, {
   toJSON: { virtuals: true},

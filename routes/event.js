@@ -46,6 +46,12 @@ router.get('/:id', needAuth, catchErrors(async (req,res,next)=> {
   res.render('event/show', {event: event});
 }));
 
+router.get('/:id/edit', needAuth, catchErrors(async (req, res, next) => {
+  const event = await Event.findById(req.params.id);
+  res.render('event/edit', {event: event});
+}));
+
+
 router.post('/:id', needAuth, catchErrors(async (req, res, next) => {
   event = new Event({
     author: req.user.id,

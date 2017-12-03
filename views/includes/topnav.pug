@@ -15,6 +15,9 @@
         else if (currentUser.root == false)
           li.nav-item
             a.nav-link(href="/signout") SIGN OUT
+          li.nav-item
+            a.nav-link(href=`/users/${currentUser.id}`)= currentUser.name
+          
           li.nav-item.create-event
             a.nav-link(href="../event/new") CREATE EVENT
         else

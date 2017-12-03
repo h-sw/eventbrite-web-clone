@@ -44,26 +44,35 @@
       label(for="organInfo") ORGANIZATION INFO
       textarea.organInfo.form-control(type="text", name="organInfo", rows="5", value=event.organInfo)
     hr
+    h5 Tickets
+    .row
+      .col-4
+        label(for="ticket") Price
+        input.form-control(type="text", name="ticket", value=event.price)
+
+    hr
+    h5 Additional Settings
+    br
     select.custom-select(name='Event') 
       option.selected Select the type of event
-      option(value='volvo') Appearance or Singing
-      option(value='saab') Attraction
-      option(value='fiat') Camp, Trip, or Reatreat
-      option(value='audi') Concert or Performance
-      option(value='audi') Conference
-      option(value='audi') Convention
-      option(value='audi') Dinner or Gala
-      option(value='audi') Festival or Fair
-      option(value='audi') Game or Competition
-      option(value='audi') Meeting or Networking Event
-      option(value='audi') Other
-      option(value='audi') Party or Social Gathering
-      option(value='audi') Race or Endurance Event
-      option(value='audi') Rally
-      option(value='audi') Screening
-      option(value='audi') Seminar or Talk
-      option(value='audi') Tour
-      option(value='audi') Tournament
+      option(value=event.type) Appearance or Singing
+      option(value=event.type) Attraction
+      option(value=event.type) Camp, Trip, or Reatreat
+      option(value=event.type) Concert or Performance
+      option(value=event.type) Conference
+      option(value=event.type) Convention
+      option(value=event.type) Dinner or Gala
+      option(value=event.type) Festival or Fair
+      option(value=event.type) Game or Competition
+      option(value=event.type) Meeting or Networking Event
+      option(value=event.type) Other
+      option(value=event.type) Party or Social Gathering
+      option(value=event.type) Race or Endurance Event
+      option(value=event.type) Rally
+      option(value=event.type) Screening
+      option(value=event.type) Seminar or Talk
+      option(value=event.type) Tour
+      option(value=event.type) Tournament
     br
     br
     select.custom-select(name='Event') Select the type of event

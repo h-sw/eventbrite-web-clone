@@ -20,12 +20,10 @@ var schema = new Schema({
   numLikes: {type: Number, default: 0},
   numAnswers: {type: Number, default: 0},
   numReads: {type: Number, default: 0},
-  ticket:{
-    name:{type:String},
-    isFree: {type: Boolean, default: true},
-    price: {type:Number, default: 0}
-  },
-  createdAt: {type: Date, default: Date.now}
+  price: {type:Number, default: 0},
+  createdAt: {type: Date, default: Date.now},
+  type: {type: String, required: true},
+  topic: {type: String, required: true}
 }, {
   toJSON: { virtuals: true},
   toObject: {virtuals: true}

@@ -2,7 +2,9 @@ extends ../layout
 
 block content
   .container
-    h1.main-title Profile Update
+    br
+    h1 Profile Update
+    hr
     form(action=`/users/${user._id}?_method=PUT`, method='POST')
       .form-group
         label(for='name') Name
@@ -19,10 +21,13 @@ block content
       .form-group
         label(for='password_confirmation') Password Confirmation
         input.form-control(type='password', id='password_confirmation', name='password_confirmation', placeholder='Password Confirmation')
-      .form-group
-        input.form-check-input(type='checkbox', value=user.root)
-        label(for='password_confirmation') Administrator
+      if(user.root)
+        .form-group
+          input.form-check-input(type='checkbox', value=user.root)
+          label(for='password_confirmation') Administrator
         
       a.btn.btn-outline-secondary(href='javascript:window.history.back();') Back 
       | 
       button.btn.btn-primary(type='submit') Update
+
+    br
