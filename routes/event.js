@@ -75,7 +75,7 @@ router.post('/:id', needAuth, catchErrors(async (req, res, next) => {
   
   await event.save();
   req.flash('success', 'Successfully posted');
-  res.redirect(`/event/${req.params.id}`);
+  res.redirect(`/event`);
 }));
 
 router.delete('/:id', needAuth, catchErrors(async (req, res, next) => {
