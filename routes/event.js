@@ -45,8 +45,9 @@ router.get('/:id', needAuth, catchErrors(async (req,res,next)=> {
 
   const event = await Event.findById(req.params.id);
   const logs = await Log.find({});
+  const log = await Log.findOne({author: req.user._id, event: event._id});
 
-  res.render('event/show', {event: event, logs:logs});
+  res.render('event/show', {event: event, log:log, logs:logs});
 }));
 
 router.get('/:id/edit', needAuth, catchErrors(async (req, res, next) => {

@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 var schema = new Schema({
   author: { type: Schema.Types.ObjectId, ref: 'User' },
   event: { type: Schema.Types.ObjectId, ref: 'Event' },
-  name: {type: String},
+  name: {type: String, default: "user"},
   createdAt: {type: Date, default: Date.now}
 }, {
   toJSON: { virtuals: true},

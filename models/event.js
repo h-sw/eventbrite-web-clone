@@ -23,7 +23,8 @@ var schema = new Schema({
   price: {type:Number, default: 0},
   createdAt: {type: Date, default: Date.now},
   type: {type: String, default: 0},
-  topic: {type: String, default: 0}
+  topic: {type: String, default: 0},
+  img: {type: String}
 }, {
   toJSON: { virtuals: true},
   toObject: {virtuals: true}
