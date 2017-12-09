@@ -38,12 +38,9 @@ block content
           a.btn.btn-outline-danger.need-confirm-btn(href=`/event/${event.id}?_method=delete`) Delete
 
       .col
-        if log &&log.id == currentUser.id
-          button.btn.btn-primary.event-like-btn(data-id=event.id)
-            span.for-loading #[i.fa.fa-spin.fa-refresh] Loading
-            span #[i.fa.fa-thumbs-up] Register
-        else
-          p Already Entered!
+        button.btn.btn-primary.event-like-btn(data-id=event.id)
+          span.for-loading #[i.fa.fa-spin.fa-refresh] Loading
+          span #[i.fa.fa-thumbs-up] Register
     hr
     h5 DESCRIPTION
     != event.contents
