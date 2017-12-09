@@ -403,23 +403,23 @@ h5{
     display: none;
   }
 
+  .card{
+    width:100%;
+  }
+
   .mobile-menu{
     display: block;
     align-content: flex-end;
   }
 
   .event-card{
-    max-width: 29%;
+    width: 100%;
   }
-  .title{
-    display: none;
+  .c-title{
+    font-size: 1.7em;
   }
 
   .search-card{
-    display: none;
-  }
-
-  .card-title{
     display: none;
   }
 
@@ -441,10 +441,6 @@ h5{
   }
   .main-box{
     display: block;
-  }
-
-  .mobile-button{
-
   }
 
   .search-box{

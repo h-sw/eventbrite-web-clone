@@ -349,16 +349,16 @@ h5 {
     align-self: center; }
   .menu-set {
     display: none; }
+  .card {
+    width: 100%; }
   .mobile-menu {
     display: block;
     align-content: flex-end; }
   .event-card {
-    max-width: 29%; }
-  .title {
-    display: none; }
+    width: 100%; }
+  .c-title {
+    font-size: 1.7em; }
   .search-card {
-    display: none; }
-  .card-title {
     display: none; }
   .center {
     font-size: 20px;
