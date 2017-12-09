@@ -9,8 +9,8 @@ var schema = new Schema({
   root: {type:Boolean, default:false},
   facebook: {id: String, token: String, photo: String},
   kakao: {id: String, token: String, photo: String},
-  createdAt: {type: Date, default: Date.now}
-}, {
+  createdAt: {type: Date, default: Date.now},
+},{
   toJSON: { virtuals: true},
   toObject: {virtuals: true}
 });

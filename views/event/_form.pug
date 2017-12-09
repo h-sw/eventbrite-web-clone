@@ -53,51 +53,53 @@
     hr
     h5 Additional Settings
     br
-    select.custom-select(name='Event') 
+    label(for='type') Event Type
+    select.custom-select(name='type', value=event.type) 
       option.selected Select the type of event
-      option(value=event.type) Appearance or Singing
-      option(value=event.type) Attraction
-      option(value=event.type) Camp, Trip, or Reatreat
-      option(value=event.type) Concert or Performance
-      option(value=event.type) Conference
-      option(value=event.type) Convention
-      option(value=event.type) Dinner or Gala
-      option(value=event.type) Festival or Fair
-      option(value=event.type) Game or Competition
-      option(value=event.type) Meeting or Networking Event
-      option(value=event.type) Other
-      option(value=event.type) Party or Social Gathering
-      option(value=event.type) Race or Endurance Event
-      option(value=event.type) Rally
-      option(value=event.type) Screening
-      option(value=event.type) Seminar or Talk
-      option(value=event.type) Tour
-      option(value=event.type) Tournament
+      option Appearance or Singing
+      option Attraction
+      option Camp, Trip, or Reatreat
+      option Concert or Performance
+      option Conference
+      option Convention
+      option Dinner or Gala
+      option Festival or Fair
+      option Game or Competition
+      option Meeting or Networking Event
+      option Other
+      option Party or Social Gathering
+      option Race or Endurance Event
+      option Rally
+      option Screening
+      option Seminar or Talk
+      option Tour
+      option Tournament
     br
     br
-    select.custom-select(name='Event') Select the type of event
+    label(for='topic') Event Topic
+    select.custom-select(name='topic', value=event.topic)
       option.selected Select a topic
-      option(value='volvo') Auto,Boat & Air
-      option(value='volvo') Business & Professional
-      option(value='volvo') Charity & Causes
-      option(value='volvo') Community & Culture
-      option(value='volvo') Family & Education
-      option(value='volvo') Fashion & Beauty
-      option(value='volvo') Film, Media & Entertainment
-      option(value='volvo') Food & Drink
-      option(value='volvo') Government & Politics
-      option(value='volvo') Health & Wellness
-      option(value='volvo') Hobbies & Special Interest
-      option(value='volvo') Home & Lifestyle
-      option(value='volvo') Music
-      option(value='volvo') other
-      option(value='volvo') Performing & Visual Arts
-      option(value='volvo') Religion & Spirituality
-      option(value='volvo') School Activities
-      option(value='volvo') Science & Technology
-      option(value='volvo') Seaconal & Holidays
-      option(value='volvo') Sports & Fitness
-      option(value='volvo') Travel & Outdoor
+      option Auto,Boat & Air
+      option Business & Professional
+      option Charity & Causes
+      option Community & Culture
+      option Family & Education
+      option Fashion & Beauty
+      option Film, Media & Entertainment
+      option Food & Drink
+      option Government & Politics
+      option Health & Wellness
+      option Hobbies & Special Interest
+      option Home & Lifestyle
+      option Music
+      option other
+      option Performing & Visual Arts
+      option Religion & Spirituality
+      option School Activities
+      option Science & Technology
+      option Seaconal & Holidays
+      option Sports & Fitness
+      option Travel & Outdoor
     hr
 script.
   $(function() { $('.contents').froalaEditor() });

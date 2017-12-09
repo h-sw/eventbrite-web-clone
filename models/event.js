@@ -22,8 +22,8 @@ var schema = new Schema({
   numReads: {type: Number, default: 0},
   price: {type:Number, default: 0},
   createdAt: {type: Date, default: Date.now},
-  type: {type: String, required: true},
-  topic: {type: String, required: true}
+  type: {type: String, default: 0},
+  topic: {type: String, default: 0}
 }, {
   toJSON: { virtuals: true},
   toObject: {virtuals: true}

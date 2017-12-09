@@ -120,4 +120,22 @@ router.post('/', catchErrors(async (req, res, next) => {
   res.redirect('/');
 }));
 
+router.post('/event/:id/enter', catchErrors(async (req, res, next) => {
+  const event = await Event.findById(req.params.id);
+  if (!event) {
+    return next({status: 404, msg: 'Not exist event'});
+  }
+  var likeLog = await LikeLog.findOne({author: req.user._id, event: event._id});
+  if (!likeLog) {
+    event.numEnter++;
+    await Promise.all([
+      event.save(),
+      LikeLog.create({author: req.user._id, event: event._id})
+    ]);
+  }
+  return res.json(question);
+}));
+
+
+
 module.exports = router;

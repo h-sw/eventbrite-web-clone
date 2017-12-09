@@ -94,6 +94,7 @@ app.use(function(req, res, next) {
 app.use('/', index);
 app.use('/users', users);
 app.use('/event', event);
+app.use('/api', require('./routes/api'));
 
 require('./routes/auth')(app, passport);
 

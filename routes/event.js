@@ -1,6 +1,7 @@
 const express = require('express');
 var Event = require('../models/event');
-var User = require('../models/user')
+var User = require('../models/user');
+var Log = require('../models/like-log');
 
 const catchErrors = require('../lib/async-error');
 
@@ -41,9 +42,11 @@ router.get('/new', needAuth, (req, res, next) => {
 });
 
 router.get('/:id', needAuth, catchErrors(async (req,res,next)=> {
-  req.flash("what the fuck?");
+
   const event = await Event.findById(req.params.id);
-  res.render('event/show', {event: event});
+  const logs = await Log.find({});
+
+  res.render('event/show', {event: event, logs:logs});
 }));
 
 router.get('/:id/edit', needAuth, catchErrors(async (req, res, next) => {
@@ -60,13 +63,14 @@ router.post('/:id', needAuth, catchErrors(async (req, res, next) => {
     contents: req.body.contents,
     organization: req.body.organization,
     organInfo: req.body.organInfo,
- 
   });
 
   event.start.date = req.body.start_date,
   event.start.time = req.body.start_time,
   event.end.date = req.body.end_date,
   event.end.time = req.body.end_time
+  event.type = req.body.type;
+  event.topic = req.body.topic;
   
   await event.save();
   req.flash('success', 'Successfully posted');
@@ -78,5 +82,6 @@ router.delete('/:id', needAuth, catchErrors(async (req, res, next) => {
   req.flash('success', 'Successfully deleted');
   res.redirect('/event');
 }));
+
 
 module.exports = router;
